@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>中国夜市 3D Ver.3</title>
+
+<link rel="stylesheet" href="./css/style.css">
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js"
+  }
+}
+</script>
+</head>
+
+<body>
+
+<div id="startScreen">
+  <div class="startPanel">
+    <div class="en">CHINA NIGHT MARKET</div>
+    <h1>中国夜市</h1>
+    <div class="line"></div>
+
+    <p>
+      灯り、人混み、屋台、路地。<br>
+      夜の中国を歩いてみよう。
+    </p>
+
+    <button id="startButton">夜市に入る</button>
+
+    <div class="controls">
+      WASD：移動　Shift：ダッシュ<br>
+      マウス：視点　ESC：メニュー
+    </div>
+  </div>
+</div>
+
+<div id="hud">
+  <div class="hudTitle">中国夜市</div>
+  <div id="location">牌楼前</div>
+</div>
+
+<div id="crosshair"></div>
+<div id="vignette"></div>
+
+<script type="module" src="./js/main.js"></script>
+
+</body>
+</html>
