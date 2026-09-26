@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  background: #02030a;
+
+  font-family:
+    "Microsoft YaHei",
+    "Noto Sans JP",
+    sans-serif;
+}
+
+canvas {
+  display: block;
+}
+
+#startScreen {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 100;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(110,20,15,.30),
+      rgba(2,2,7,.94)
+    );
+}
+
+.startPanel {
+  width: min(540px,90vw);
+
+  padding: 45px 35px;
+
+  text-align: center;
+
+  color: white;
+
+  border:
+    1px solid rgba(255,190,90,.25);
+
+  background:
+    rgba(15,8,10,.94);
+
+  box-shadow:
+    0 30px 100px #000;
+
+  border-radius: 8px;
+}
+
+.en {
+  color: #b98548;
+
+  font-size: 11px;
+
+  letter-spacing: 6px;
+}
+
+.startPanel h1 {
+  margin: 10px 0;
+
+  font-size: 45px;
+
+  color: #f2c56c;
+
+  letter-spacing: 5px;
+}
+
+.line {
+  width: 50px;
+  height: 1px;
+
+  margin: 20px auto;
+
+  background: #a8753c;
+}
+
+.startPanel p {
+  color: #aaa;
+
+  line-height: 2;
+}
+
+button {
+  margin-top: 15px;
+
+  padding:
+    14px 38px;
+
+  border: 0;
+
+  color: white;
+
+  font-size: 15px;
+
+  background:
+    linear-gradient(
+      #b52323,
+      #741010
+    );
+
+  border-radius: 30px;
+
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
+
+.controls {
+  margin-top: 25px;
+
+  color: #666;
+
+  font-size: 11px;
+
+  line-height: 1.8;
+}
+
+#hud {
+  position: fixed;
+
+  top: 20px;
+  left: 22px;
+
+  z-index: 20;
+
+  color: white;
+
+  pointer-events: none;
+
+  text-shadow:
+    0 2px 5px #000;
+}
+
+.hudTitle {
+  font-size: 18px;
+
+  font-weight: bold;
+
+  letter-spacing: 3px;
+}
+
+#location {
+  margin-top: 6px;
+
+  color: #e7b75c;
+
+  font-size: 12px;
+}
+
+#crosshair {
+  position: fixed;
+
+  left: 50%;
+  top: 50%;
+
+  width: 4px;
+  height: 4px;
+
+  transform:
+    translate(-50%,-50%);
+
+  background:
+    rgba(255,255,255,.65);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  z-index: 20;
+}
+
+#vignette {
+  position: fixed;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  z-index: 15;
+
+  box-shadow:
+    inset 0 0 160px
+    rgba(0,0,0,.55);
+}
